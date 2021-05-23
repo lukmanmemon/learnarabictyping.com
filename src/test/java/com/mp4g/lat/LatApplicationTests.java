@@ -1,10 +1,10 @@
-package com.mp4g.lat.web;
+package com.mp4g.lat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebApplicationTests {
+class LatApplicationTests {
 
 	@Test
 	void contextLoads() {
