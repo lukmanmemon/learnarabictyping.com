@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Learn Arabic Typing</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Markazi%20Text' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amiri' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin' rel='stylesheet'>
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+  </head>
+  <body>
+    <h5 id="bismillah">بسم الله الرحمن الرحيم</h5>
+    <div>
+      Input
+      <form action="#" th:action="@{/arabic-input}" th:object="${input}" method="POST">
+        <input type="text" th:field="*{value}">
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div>
+      Output
+    </div>
+    <div>
+      Typing
+    </div>
+  </body>
+</html>
