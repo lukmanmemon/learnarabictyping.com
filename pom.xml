@@ -5,61 +5,51 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.5</version>
+		<version>2.5.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mp4g.lat</groupId>
-	<artifactId>web</artifactId>
+	<groupId>com.mp4g</groupId>
+	<artifactId>lat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>web</name>
+	<name>lat</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-
-	  <dependency>
-	    <groupId>org.thymeleaf.extras</groupId>
-	    <artifactId>thymeleaf-extras-java8time</artifactId>
-	    <version>3.0.4.RELEASE</version>
-	  </dependency>
-
-
-	  <dependency>
-	    <groupId>org.thymeleaf</groupId>
-	    <artifactId>thymeleaf-spring5</artifactId>
-	    <version>3.0.12.RELEASE</version>
-	  </dependency>
-
-
-	  <dependency>
-	    <groupId>org.thymeleaf</groupId>
-	    <artifactId>thymeleaf</artifactId>
-	    <version>3.0.12.RELEASE</version>
-	  </dependency>
-
-
-	  <dependency>
-	    <groupId>org.apache.tomcat.embed</groupId>
-	    <artifactId>tomcat-embed-el</artifactId>
-	    <version>10.0.6</version>
-	  </dependency>
-
-
-	  <dependency>
-	    <groupId>org.unbescape</groupId>
-	    <artifactId>unbescape</artifactId>
-	    <version>1.1.6.RELEASE</version>
-	  </dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
